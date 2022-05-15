@@ -1,22 +1,21 @@
+body {
+    background-color: aquamarine;
+}
 .container {
-    width: 60%;
+    width: 40%;
     margin: 0 auto;
     text-align: center;
-    height: 100vh;
 }
 .images {
     display: flex;
     justify-content: space-between;
     width: 500%;
-    height: 80vh;
 }
 .img {
    width: 20%;
-   height: 80vh;
 }
 .img img {
    width: 100%;
-   height: 100%;
 }
 .texts {
     margin-top: 2rem;
@@ -81,25 +80,31 @@ label,a {
 }
 /* controllers */
 .switcher label {
-    border-radius: 1vh;
+    border-radius: 1rem;
     display: inline-block;
-    width: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+}
+.circle {
+    margin: 0.7rem ;
+    width: 1.5em;
     height: 1.5rem;
+    border-radius: 1rem;
     background-color: #bbb;
 }
 .switcher {
     margin: 1rem 0 0;
 }
-.switcher label:hover {
+label:hover .circle {
     background: #76c8ff;
 	border-color: #777
 }
 
-#switch1:checked ~ .switcher label:nth-child(1),
-#switch2:checked ~ .switcher label:nth-child(2),
-#switch3:checked ~ .switcher label:nth-child(3),
-#switch4:checked ~ .switcher label:nth-child(4),
-#switch5:checked ~ .switcher label:nth-child(5){
+#switch1:checked ~ .switcher label:nth-child(1) .circle,
+#switch2:checked ~ .switcher label:nth-child(2) .circle,
+#switch3:checked ~ .switcher label:nth-child(3) .circle,
+#switch4:checked ~ .switcher label:nth-child(4) .circle,
+#switch5:checked ~ .switcher label:nth-child(5) .circle{
 	background: #18a3dd;
 	border-color: #18a3dd !important;
 }
@@ -113,25 +118,19 @@ label,a {
 .switcher label {
     transition: opacity 0.2s ease-out;
 }
+@media(max-width:1200px){
+    .container {
+        width: 50%;
+    }
+}
+@media(max-width:800px){
+    .container {
+        width: 60%;
+    }
+}
 @media(max-width:550px){
-    .images {
-        height: 60vh;
-    }
-    .img {
-        height: 60vh;
-    }
-    .img img {
-        height: 60vh;
+    .container {
+        width: 85%;
     }
 }
-@media(max-width:460px){
-        .images {
-        height: 50vh;
-    }
-    .img {
-        height: 50vh;
-    }
-    .img img {
-        height: 50vh;
-    }
-}
+ 

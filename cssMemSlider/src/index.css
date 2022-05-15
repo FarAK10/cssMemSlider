@@ -32,7 +32,6 @@ body {
 .overflow {
     width: 100%;
     overflow: hidden;
-
 }
 
 label,a {
@@ -90,14 +89,15 @@ label,a {
     width: 1.5em;
     height: 1.5rem;
     border-radius: 1rem;
-    background-color: #bbb;
+    background-color: rgb(212, 204, 204);
 }
 .switcher {
     margin: 1rem 0 0;
 }
 label:hover .circle {
-    background: #76c8ff;
-	border-color: #777
+    background: rgb(255, 131, 255);
+	border-color: #777;
+    transition: 0.3s;
 }
 
 #switch1:checked ~ .switcher label:nth-child(1) .circle,
@@ -105,8 +105,9 @@ label:hover .circle {
 #switch3:checked ~ .switcher label:nth-child(3) .circle,
 #switch4:checked ~ .switcher label:nth-child(4) .circle,
 #switch5:checked ~ .switcher label:nth-child(5) .circle{
-	background: #18a3dd;
-	border-color: #18a3dd !important;
+	background: rgb(216, 55, 216);
+	border-color: rgb(243, 77, 243) !important;
+    transition: 0.3s;
 }
 .foto-slides .images, .text-slides .texts {
     transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);

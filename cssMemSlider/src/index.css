@@ -89,7 +89,7 @@ label,a {
     width: 1.5em;
     height: 1.5rem;
     border-radius: 1rem;
-    background-color: rgb(218, 205, 205);
+    background-color: white;
 }
 .switcher {
     margin: 1rem 0 0;

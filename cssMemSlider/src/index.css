@@ -2,7 +2,7 @@ body {
     background-color: aquamarine;
 }
 .container {
-    width: 40%;
+    width: 35%;
     margin: 0 auto;
     text-align: center;
 }
@@ -89,13 +89,13 @@ label,a {
     width: 1.5em;
     height: 1.5rem;
     border-radius: 1rem;
-    background-color: rgb(212, 204, 204);
+    background-color: rgb(218, 205, 205);
 }
 .switcher {
     margin: 1rem 0 0;
 }
 label:hover .circle {
-    background: rgb(255, 131, 255);
+    background: rgb(255, 117, 255);
 	border-color: #777;
     transition: 0.3s;
 }
@@ -106,7 +106,7 @@ label:hover .circle {
 #switch4:checked ~ .switcher label:nth-child(4) .circle,
 #switch5:checked ~ .switcher label:nth-child(5) .circle{
 	background: rgb(216, 55, 216);
-	border-color: rgb(243, 77, 243) !important;
+	border-color: rgb(243, 77, 243);
     transition: 0.3s;
 }
 .foto-slides .images, .text-slides .texts {
@@ -124,12 +124,8 @@ label:hover .circle {
         width: 50%;
     }
 }
-@media(max-width:800px){
-    .container {
-        width: 60%;
-    }
-}
-@media(max-width:550px){
+
+@media(max-width:700px){
     .container {
         width: 85%;
     }

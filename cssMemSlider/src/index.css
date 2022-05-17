@@ -116,6 +116,10 @@ label:hover .circle {
 	border-color: #777;
     transition: 0.3s;
 }
+ label:active .circle {
+    background-color: rgb(136, 199, 241);
+    transition: 0.3s;
+}
 
 #switch1:checked ~.wrapper .switcher label:nth-child(1) .circle,
 #switch2:checked ~.wrapper .switcher label:nth-child(2) .circle,
